@@ -1,9 +1,9 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/public
+    working_directory: ~/testci
     docker:
       - image: circleci/python
     steps:
       - checkout
-      - run: ex01.py
+      - run:  ex01.py
