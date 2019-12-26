@@ -1,9 +1,13 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/testci
+    working_directory: ~/testci 
     docker:
-      - image: circleci/python
+      - image: circleci/python:3.6.4
     steps:
       - checkout
-      - run:  ex01.py
+      - run:
+          name: testci
+          command: |
+            . venv/bin/activate
+            python testci/ex01.py
