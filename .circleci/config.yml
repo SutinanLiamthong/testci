@@ -8,7 +8,9 @@ jobs:
         - checkout  # checkout source code to working directory
         - run: 
             command: |
-              pipenv run python ex01.py test
+              pwd
+              python ex01.py 
+
         - store_test_results:
             path: test-results
         - store_artifacts: #บันทึกผลลัพธ์การทดสอบ
