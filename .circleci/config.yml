@@ -1,13 +1,9 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/testci 
+    working_directory: ~/public
     docker:
       - image: circleci/python:3.6.4
     steps:
-      - checkout
-      - run:
-          name: testci
-          command: |
-            . venv/bin/activate
-            python testci/ex01.py
+        - run: echo 'testeie'
+            
