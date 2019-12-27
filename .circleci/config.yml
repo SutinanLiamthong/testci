@@ -7,5 +7,5 @@ jobs:
     steps:
         - run: 
             command: |
-              pipenv run python ex01.py test
+              pip run python ex01.py test
             
