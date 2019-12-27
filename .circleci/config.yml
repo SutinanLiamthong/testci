@@ -7,5 +7,5 @@ jobs:
     steps:
         - run: 
             command: |
-              pip run python ex01.py test
+              python ex01.py test
             
