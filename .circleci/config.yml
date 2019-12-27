@@ -6,6 +6,6 @@ jobs:
       - image: circleci/python:3.6.4
     steps:
         - run: 
-            command: 
+            command: |
               pipenv run python ex01.py test
             
